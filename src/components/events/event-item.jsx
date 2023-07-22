@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/Button";
 
@@ -16,12 +17,12 @@ const EventItem = (props) => {
 
   return (
     <li className={classess.item}>
-      <img src={"/" + image} alt="" />
+      <Image src={"/" + image} alt={title} width={256} height={160} />
       <div className={classess.content}>
         <div>
           <h2>{title}</h2>
           <div>
-            <div>{humanReadableDate}</div>
+            <div className={classess.time}>{humanReadableDate}</div>
           </div>
           <div>
             <address>{formattedAdress}</address>

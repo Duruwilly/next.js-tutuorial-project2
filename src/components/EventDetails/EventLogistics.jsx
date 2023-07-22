@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import LogisticsItem from "./LogisticsItem";
 
@@ -15,7 +16,7 @@ const EventLogistics = (props) => {
   return (
     <section>
       <div>
-        <img src={`/${image}`} alt={imageAlt} />
+        <Image src={`/${image}`} alt={imageAlt} width={260} height={260} />
       </div>
       <ul>
         <LogisticsItem>
